@@ -39,10 +39,12 @@ allow audioserver scheduling_policy_service:service_manager find;
 allow audioserver audio_data_file:dir ra_dir_perms;
 allow audioserver audio_data_file:file create_file_perms;
 
-# allow access to ALSA MMAP FDs for AAudio API
-allow audioserver audio_device:chr_file { read write };
+# Allow ViPER4Android in enforcing mode.
+allow audioserver audioserver_tmpfs:file { read write execute };
 
-# For A2DP bridge which is loaded directly into audioserver
+# Needed on some devices for playing audio on paired BT device,
+# but seems appropriate for all devices.
+
 unix_socket_connect(audioserver, bluetooth, bluetooth)
 
 ###
