@@ -124,6 +124,10 @@ allow system_app system_server:udp_socket {
 #selinux status
 allow system_app selinuxfs:file r_file_perms;
 
+
+# /data/system access
+allow system_app system_data_file:file r_file_perms;
+
 ###
 ### Neverallow rules
 ###
