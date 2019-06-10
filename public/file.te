@@ -45,6 +45,7 @@ type proc_pid_max, fs_type, proc_type;
 type proc_pipe_conf, fs_type, proc_type;
 type proc_random, fs_type, proc_type;
 type proc_sched, fs_type, proc_type;
+type proc_slabinfo, fs_type, proc_type;
 type proc_stat, fs_type, proc_type;
 type proc_swaps, fs_type, proc_type;
 type proc_sysrq, fs_type, proc_type;
@@ -230,6 +231,9 @@ type storage_stub_file, file_type;
 
 # Mount location for read-write vendor partitions.
 type mnt_vendor_file, file_type;
+
+# Mount location for read-write product partitions.
+type mnt_product_file, file_type;
 
 # /postinstall: Mount point used by update_engine to run postinstall.
 type postinstall_mnt_dir, file_type;

@@ -21,6 +21,7 @@ genfscon proc /net/xt_qtaguid/ctrl u:object_r:qtaguid_proc:s0
 genfscon proc /net/xt_qtaguid/ u:object_r:proc_qtaguid_stat:s0
 genfscon proc /cpuinfo u:object_r:proc_cpuinfo:s0
 genfscon proc /pagetypeinfo u:object_r:proc_pagetypeinfo:s0
+genfscon proc /slabinfo u:object_r:proc_slabinfo:s0
 genfscon proc /softirqs u:object_r:proc_timer:s0
 genfscon proc /stat u:object_r:proc_stat:s0
 genfscon proc /swaps u:object_r:proc_swaps:s0
@@ -146,6 +147,7 @@ genfscon debugfs /tracing/events/regulator/                          u:object_r:
 genfscon debugfs /tracing/events/pagecache/                          u:object_r:debugfs_tracing_debug:s0
 genfscon debugfs /tracing/events/irq/                                u:object_r:debugfs_tracing_debug:s0
 genfscon debugfs /tracing/events/ipi/                                u:object_r:debugfs_tracing_debug:s0
+genfscon debugfs /tracing/events/header_page                         u:object_r:debugfs_tracing:s0
 genfscon debugfs /tracing/events/f2fs/f2fs_sync_file_enter/          u:object_r:debugfs_tracing:s0
 genfscon debugfs /tracing/events/f2fs/f2fs_sync_file_exit/           u:object_r:debugfs_tracing:s0
 genfscon debugfs /tracing/events/f2fs/f2fs_write_begin/              u:object_r:debugfs_tracing:s0
@@ -162,6 +164,7 @@ genfscon tracefs /events/regulator/                          u:object_r:debugfs_
 genfscon tracefs /events/pagecache/                          u:object_r:debugfs_tracing_debug:s0
 genfscon tracefs /events/irq/                                u:object_r:debugfs_tracing_debug:s0
 genfscon tracefs /events/ipi/                                u:object_r:debugfs_tracing_debug:s0
+genfscon tracefs /events/header_page                         u:object_r:debugfs_tracing:s0
 genfscon tracefs /events/f2fs/f2fs_sync_file_enter/          u:object_r:debugfs_tracing:s0
 genfscon tracefs /events/f2fs/f2fs_sync_file_exit/           u:object_r:debugfs_tracing:s0
 genfscon tracefs /events/f2fs/f2fs_write_begin/              u:object_r:debugfs_tracing:s0
