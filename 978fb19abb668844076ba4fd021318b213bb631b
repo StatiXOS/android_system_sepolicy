@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc07318b_85b6059d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-12-21T09:31:30Z",
+      "side": 1,
+      "message": "BUILD_BROKEN_ENFORCE_SYSPROP_OWNER :\u003d true",
+      "revId": "978fb19abb668844076ba4fd021318b213bb631b",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}
