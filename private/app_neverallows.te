@@ -243,3 +243,12 @@ neverallow {
 
 # Only privileged apps may find the incident service
 neverallow all_untrusted_apps incident_service:service_manager find;
+
+# Disallow untrusted apps from reading debuggable and secure system properties.
+# For compatibility, allow for targetApi <= 30
+neverallow {
+  all_untrusted_apps
+  -untrusted_app_25
+  -untrusted_app_27
+  -untrusted_app_29
+} { debuggable_prop secure_prop }:file read;
