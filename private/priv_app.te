@@ -139,6 +139,10 @@ can_profile_perf(priv_app)
 # Allow priv_apps to check whether Dynamic System Update is enabled
 get_prop(priv_app, dynamic_system_prop)
 
+# Allow priv_apps to read the debuggable and secure  system props
+get_prop(priv_app, debuggable_prop)
+get_prop(priv_app, secure_prop)
+
 # suppress denials for non-API accesses.
 dontaudit priv_app exec_type:file getattr;
 dontaudit priv_app device:dir read;
