@@ -127,4 +127,5 @@
     vendor_service_contexts_file
     vendor_socket_hook_prop
     vendor_socket_hook_prop
-    virtual_ab_prop))
+    virtual_ab_prop
+    remount))

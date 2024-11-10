@@ -13,4 +13,5 @@
     binderfs_logs_transaction_history
     proc_compaction_proactiveness
     proc_cgroups
+    remount
   ))
